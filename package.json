@@ -1,0 +1,29 @@
+{
+  "name": "website-template",
+  "version": "0.0.1",
+  "description": "Website Template",
+  "main": "app.js",
+  "dependencies": {
+    "bulma": "^0.9.3",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "prettier": "^2.5.1"
+  },
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/styles.scss css/index.css --output-style compressed",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwahrens/website-template.git"
+  },
+  "author": "Drew Ahrens",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/dwahrens/website-template/issues"
+  },
+  "homepage": "https://github.com/dwahrens/website-template#readme"
+}
